@@ -66,13 +66,13 @@ server {
 Passing environment variables yourself
 
 ```
-docker run -e "VARIABLE=value" myimage
+docker run -p 80:80 -e VARIABLE=value myimage
 ```
 
-Works with links too (uses environment variables too)
+Works with links too
 
 ```
-docker run --link backendimage myimage
-```
+docker run -p 80:80 --link backendimage:backendimage myimage
+``` 
 
-
+Ideal for [tutum](http://tutum.co)
