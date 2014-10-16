@@ -79,9 +79,3 @@ docker run -p 80:80 --link backendimage:backendimage myimage
 
 Ideal for [tutum](http://tutum.co)
 
-### source and image
-
-- [github](https://github.com/eyenx/docker-nginx-rp)
-- [docker](https://registry.hub.docker.com/u/eyenx/nginx-rp)
-
-
