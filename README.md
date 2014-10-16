@@ -9,10 +9,12 @@ Simple dockerized nginx reverseproxy w/ [Jinja2](http://jinja.pocoo.org/) templa
 
 used environment variables:
 
+```
 RESOLVER = dns resolver (ex. 8.8.8.8)
 SERVER_NAME = server name used for nginx (ex. example.com)
 BACKEND_ADDR = backend address (ex. mybackend-1.example.com)
 BACKEND_PORT = backend port (ex. 4000)
+```
 
 
 ```
@@ -76,3 +78,9 @@ docker run -p 80:80 --link backendimage:backendimage myimage
 ``` 
 
 Ideal for [tutum](http://tutum.co)
+
+### source and image
+
+- [github](https://github.com/eyenx/docker-nginx-rp)
+- [docker](https://registry.hub.docker.com/u/eyenx/nginx-rp)
+
