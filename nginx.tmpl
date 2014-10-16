@@ -1,21 +1,3 @@
-## docker-nginx-rp
-
-Simple dockerized nginx reverseproxy w/ [Jinja2](http://jinja.pocoo.org/) templating using [j2cli](https://pypi.python.org/pypi/j2cli/).
-
-`/etc/nginx/nginx.conf` is created from nginx.tmpl with environment variables passed to [docker](http://docker.io)
-
-### example nginx.tmpl
-
-
-used environment variables:
-
-RESOLVER = dns resolver (ex. 8.8.8.8)
-SERVER_NAME = server name used for nginx (ex. example.com)
-BACKEND_ADDR = backend address (ex. mybackend-1.example.com)
-BACKEND_PORT = backend port (ex. 4000)
-
-
-```
 user  nginx;
 daemon off;
 worker_processes  1;
@@ -53,26 +35,3 @@ server {
         }
     }
 }
-
-```
-
-
-### BUILD
-
-`docker build -t myimage .`
-
-### RUN
-
-Passing environment variables yourself
-
-```
-docker run -e "VARIABLE=value" myimage
-```
-
-Works with links too (uses environment variables too)
-
-```
-docker run --link backendimage myimage
-```
-
-
