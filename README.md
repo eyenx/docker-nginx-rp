@@ -59,11 +59,11 @@ server {
 ```
 
 
-### BUILD
+### build
 
 `docker build -t myimage .`
 
-### RUN
+### run
 
 Passing environment variables yourself
 
@@ -83,4 +83,5 @@ Ideal for [tutum](http://tutum.co)
 
 - [github](https://github.com/eyenx/docker-nginx-rp)
 - [docker](https://registry.hub.docker.com/u/eyenx/nginx-rp)
+
 
