@@ -18,4 +18,4 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push eyenx/nginx-rp
+      - docker push eyenx/nginx-rp:latest
