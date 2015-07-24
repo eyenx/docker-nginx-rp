@@ -1,5 +1,6 @@
 FROM nginx:latest
 MAINTAINER eye@eyenx.ch
+RUN apt-get update -y
 RUN apt-get install -y python-pip
 RUN pip install j2cli
 COPY start /start
