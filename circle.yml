@@ -10,7 +10,8 @@ dependencies:
 test:
   override:
     - docker run -d -p 80:80 -e "RESOLVER=8.8.8.8" -e "SERVER_NAME=server.name" -e "BACKEND_ADDR=127.0.0.1" -e "BACKEND_PORT=8080" eyenx/nginx-rp; sleep 10
-    - curl --retry 10 --retry-delay 5 -v http://localhost:80
+    - netcat -vz localhost 80
+    - curl -I http://localhost:80
 
 deployment:
   hub:
