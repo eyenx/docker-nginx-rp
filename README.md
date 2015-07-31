@@ -1,4 +1,5 @@
 ## docker-nginx-rp
+[![Circle CI](https://circleci.com/gh/eyenx/docker-nginx-rp.svg?style=svg)](https://circleci.com/gh/eyenx/docker-nginx-rp)
 
 Simple dockerized nginx reverseproxy w/ [Jinja2](http://jinja.pocoo.org/) templating using [j2cli](https://pypi.python.org/pypi/j2cli/).
 
