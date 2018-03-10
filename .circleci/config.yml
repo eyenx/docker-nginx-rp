@@ -10,10 +10,10 @@ jobs:
           name: build Image
           command: |
             docker build -t eyenx/nginx-rp .
-      - run:
-          name: Run Tests
-          command: |
-            docker run -d -p 80:80 -e "RESOLVER=8.8.8.8" -e "SEVER_NAME=server.name" -e BACKEND_ADDR=127.0.0.1" -e "BACKEND_PORT=8080" eyenx/nginx-rp && sleep 10 && curl -I http://localhost:80
+#      - run:
+#          name: Run Tests
+#          command: |
+#            apk add --update curl && docker run -d -p 80:80 -e "RESOLVER=8.8.8.8" -e "SEVER_NAME=server.name" -e "BACKEND_ADDR=127.0.0.1" -e "BACKEND_PORT=8080" eyenx/nginx-rp && sleep 10 && curl -I http://localhost:80
       - run:
           name: Push Image
           command: |
