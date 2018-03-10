@@ -17,4 +17,4 @@ jobs:
       - run:
           name: Push Image
           command: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASS && docker push eyenx/eyenx-nginx-rp:latest
+            docker login -u $DOCKER_USER -p $DOCKER_PASS && docker push eyenx/nginx-rp:latest
