@@ -1,4 +1,4 @@
-name: "build and push image"
+name: "build"
 on:
   schedule:
     - cron: '3 3 * * *'
