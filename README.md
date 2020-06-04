@@ -1,5 +1,5 @@
 ## docker-nginx-rp
-[![](https://images.microbadger.com/badges/image/eyenx/docker-nginx-rp.svg)](https://microbadger.com/images/eyenx/docker-nginx-rp "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/eyenx/docker-nginx-rp.svg)](https://microbadger.com/images/eyenx/docker-nginx-rp "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/eyenx/nginx-rp.svg)](https://microbadger.com/images/eyenx/nginx-rp "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/eyenx/nginx-rp.svg)](https://microbadger.com/images/eyenx/nginx-rp "Get your own version badge on microbadger.com")
 [![Circle CI](https://circleci.com/gh/eyenx/docker-nginx-rp.svg?style=svg)](https://circleci.com/gh/eyenx/docker-nginx-rp)
 
 Simple dockerized nginx reverseproxy w/ [Jinja2](http://jinja.pocoo.org/) templating using [j2cli](https://pypi.python.org/pypi/j2cli/).
