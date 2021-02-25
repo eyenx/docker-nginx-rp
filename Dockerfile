@@ -1,6 +1,6 @@
 	
 FROM	nginx:latest
-MAINTAINER	eye@eyenx.ch
+LABEL	org.opencontainers.image.source="Toni Tauro <eye@eyenx.ch>"
 RUN	apt-get update -y
 RUN	apt-get install -y \
 	python-pip
