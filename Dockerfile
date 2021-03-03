@@ -1,6 +1,6 @@
 	
 FROM	nginx:latest
-LABEL	org.opencontainers.image.source="Toni Tauro <eye@eyenx.ch>"
+LABEL	org.opencontainers.image.authors="Toni Tauro <eye@eyenx.ch>"
 RUN	apt-get update -y
 RUN	apt-get install -y \
 	python-pip
